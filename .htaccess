@@ -105,6 +105,7 @@ SetEnvIf X-Forwarded-Proto https HTTPS=on
 <ifModule mod_headers.c>
 	Header unset ETag
 	Header unset Last-Modified
+	Header set X-XSS-Protection "1; mode=block"
 </ifModule>
 
 
